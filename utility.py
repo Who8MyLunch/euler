@@ -71,6 +71,12 @@ def find_factors(z):
             yield z
             break
 
+
+
+def factors(z):
+    value = [v for v in find_factors(z)]
+    return value
+
 #################################################
 
 

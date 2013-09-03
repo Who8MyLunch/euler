@@ -26,9 +26,11 @@ number = 20
 
 value = sp.misc.factorial(number, exact=True)
 
+factors = set()
 for k in range(number, 1, -1):
     f = [v for v in utility.find_factors(k)]
-    print(f)
+    factors.update(f)
+    print(factors)
 
 
 
